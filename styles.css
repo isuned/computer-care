@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;     
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav {
+    background: #424141;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    padding: 2rem;
+}
+footer {
+    text-align: center;
+    background: #181414;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*drop down menu colour and other functions  */
+.dropdown button 
+{background-color:rgb(240, 229, 229);
+color :black;
+padding: 10px 15px;
+border: none;
+cursor: pointer;
+}
+/*the content under the drop down menu */
+.dropdown{display : inline-block;}
+.dropdown a {
+    display: block;
+    color :black;
+    text-decoration: none;
+    padding : 10px 15px;
+}
+/*to display the content */
+.dropdown  .content {
+    display: none;
+    position: absolute ;
+    background-color :hsl(0, 0%, 95%);
+    min-width :100px;
+    box-shadow: 2px 2px 5px hsla(0,0,0,0.8);
+}
+.dropdown:hover .content {
+    display: block;
+}
+.dropdown :hover button{
+    background-color: hsl(0, 0%, 95%);
+}
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 95%);
+}
