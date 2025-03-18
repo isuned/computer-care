@@ -109,4 +109,39 @@ ion-icon {
 .dropdown .show {
     display: block;
 }
+/* Initially hide all content */
+.hidden-content {
+    display: none;
+}
 
+/* Style for dropdown and content */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content a {
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.content a:hover {
+    background-color: #f0f0f0;
+}
+.hidden-content {
+    display: none;
+}
+
+/* Show the home content by default */
+#home-content {
+    display: block;
+}
+
+.abt {
+    text-align: center; /*used to allign the about section*/
+}
+.twk {
+    text-align: center;  /*used to allign the tweak section to center */
+}

@@ -8,35 +8,61 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <head>
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>      <!-- the webpage for the menu bar  -->
+
+    
+    
 </head>
 <body>
     <header>
         <h1> Computer World </h1>
-    </header>
-    <div class = "dropdown">
+    </header>        <!-- The drop down  section  -->
+    <div class="dropdown">
         <button><ion-icon name="menu-outline"></ion-icon></button>
-        <div class = "content">
-            <a href="">home</a>
-            <a href="">about</a>
-            <a href="">Tweaks</a>
+        <div class="content">
+            <a href="#" class="menu-item" data-target="home-content">home</a>
+            <a href="#" class="menu-item" data-target="about-content">about</a>
+            <a href="#" class="menu-item" data-target="tweaks-content">Tweaks</a>
+        </div>
+    </div>
+
+    <!-- Hidden content sections -->
+    <div id="home-content" class="hidden-content">
+    
+        
+        <div class="container">
+            <!-- Home section  -->
+            <h2>Our Vision</h2>
+            <p>This website is ment to guide you in taking care of your laptop or your pc for beginners .</p>
+            <p>we are looking to give users from new computer users to more experienced computer users some tips on computer care , No matter what your doing .</p>
+            <img src="Gaming-Computers-servicing.jpg" alt="Gaming Computers Servicing" style="width: 75%; height: auto;">
+            <h2>Our Services</h2>
+            <p style="color: rgb(2, 2, 2); font-size: 20px;";> We teach you step by step, all the processes of taking care of your pc.</p>
+            
         </div>
     </div>
     
-    </nav>
-    <div class="container">
-        <h2>Our Vision</h2>
-        <p>This website is ment to guide you in taking care of your laptop or your pc for beginners .</p>
-        <p>we are looking to give users from new computer users to more experienced computer users some tips on computer care , No matter what your doing .</p>
-        <img src="Gaming-Computers-servicing.jpg" alt="Gaming Computers Servicing" style="width: 75%; height: auto;">
-        <h2>Our Services</h2>
-        <p style="color: rgb(2, 2, 2); font-size: 20px;";> We teach you step by step, all the processes of taking care of your pc.</p>
-        
+    <div id="about-content" class="hidden-content">
+        <!-- about section   -->
+        <div class="abt">
+            <h3>About Content</h3>
+            <p>This is some hidden text for the about section.</p>
+        </div>
     </div>
+    <div id="tweaks-content" class="hidden-content">
+        <!-- tweaks ....  --> 
+        <div class="twk">
+        <h3>Tweaks Content</h3>
+        <p>This is some hidden text for the tweaks section.</p>
+        </div>
+    </div>
+    
+    
+   
     <footer>
         <p>&copy; 2025 computer care. All rights reserved.</p>
     </footer>
-    <script src="interactions.js"></script>
+    <script src="interactions.js"></script>   <!-- the javascript file   -->
 
 </body>
 </html>

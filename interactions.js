@@ -13,4 +13,20 @@ window.addEventListener("click", function (event) {
         dropdownContent.classList.remove("show");
     }
 });
+// JavaScript to toggle visibility of hidden content just added 
+document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default link behavior
 
+        // Hide all content sections
+        document.querySelectorAll('.hidden-content').forEach(content => {
+            content.style.display = 'none';
+        });
+
+        // Get the target content ID and show it
+        const targetContent = document.getElementById(this.getAttribute('data-target'));
+        if (targetContent) {
+            targetContent.style.display = 'block';
+        }
+    });
+});
