@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;     
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background: url('backg.jpg') no-repeat center center / cover;
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 header { 
@@ -33,6 +34,15 @@ nav a:hover {
     padding: 2rem;
     text-align: center;
 }
+
+h2{
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
 footer {
     text-align: center;
     background: #121111;
@@ -44,8 +54,8 @@ footer {
 }
 /*drop down menu colour and other functions  */
 .dropdown button 
-{background-color:hsl(0, 5%, 78%);
-color :rgb(0, 0, 0);
+{background-color:transparent;
+color :rgb(255, 255, 255);
 padding: 10px 15px;
 border: none;
 cursor: pointer;
@@ -145,3 +155,27 @@ ion-icon {
 .twk {
     text-align: center;  /*used to allign the tweak section to center */
 }
+
+.drastic-improvements {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.drastic-improvements:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.drastic-improvements i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+h3 {
+    font-size: 24px;
+    color: #f9f9f9;
+}
+
