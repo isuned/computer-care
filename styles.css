@@ -155,14 +155,24 @@ ion-icon {
 .twk {
     text-align: center;  /*used to allign the tweak section to center */
 }
+.container_about {
+    display: flex;
+    justify-content: center;   /* Centers horizontally */
+    align-items: center;       /* Centers vertically */
+    min-height: 80vh;         /* Ensures the section takes the full viewport height */
+}
+
 
 .drastic-improvements {
     background: transparent;
     backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 10px;
+    width : 400px;
+    text-align: center;
     transition: transform 0.3s;
 }
+
 
 .drastic-improvements:hover {
     transform: translateY(-10px);
