@@ -13,6 +13,11 @@ header {
     color: #fff;          /*header colour*/
     padding: 0.5rem 0;      /*all header functions lie here*/ 
     text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+header:hover {         /*hover effect on header*/
+    background: #834278;
+    color: #fff;
 }
 nav {
 
@@ -51,75 +56,95 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    transition: background 0.3s, color 0.3s;
 }
-/*drop down menu colour and other functions  */
-.dropdown button 
-{background-color:transparent;
-color :rgb(255, 255, 255);
-padding: 10px 15px;
-border: none;
-cursor: pointer;
-
+footer:hover {
+    background: #834278;
+    color: #fff;
 }
-ion-icon {
-    font-size: 30px; /* the icon for the menu resizing  */
-}
-/*the content under the drop down menu */
-.dropdown{display : inline-block;}
-.dropdown a {
-    display: block;
-    color :black;
-    text-decoration: none;
-    padding : 10px 15px;
-}
-/*to display the content */
-.dropdown  .content {
-    display: none;
-    position: absolute ;
-    background-color :hsl(0, 0%, 95%);
-    min-width :100px;
-    box-shadow: 2px 2px 5px hsla(0,0,0,0.8);
-}
-.dropdown:hover .content {
-    display: block;
-}
-.dropdown :hover button{
-    background-color: hsla(0, 0%, 95%, 0.052);
-}
-.dropdown a:hover {
-    background-color: hsl(0, 8%, 83%);
-}
-/*test content  */
+/* Dropdown container */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+/* Dropdown button */
+.dropdown button {
+    background: #061006; /* Stylish green */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.dropdown button:hover {
+    background: #9e5c8f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown content */
 .dropdown .content {
     display: none;
     position: absolute;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    min-width: 150px;
+    background: #ffffff;  /* Clean white background */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     z-index: 1;
+    border-radius: 8px;    /* Rounded corners */
+    overflow: hidden;       /* Prevent content overflow */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation */
+    opacity: 0;
+    transform: translateY(-10px);
 }
 
+/* Show dropdown with animation */
+.dropdown .content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Menu items */
 .dropdown .content a {
-    display: block;
-    padding: 10px;
+    color: #333;             /* Dark text color */
+    padding: 12px 16px;
     text-decoration: none;
-    color: black;
-}
-
-.dropdown .content a:hover {
-    background-color: lightgray;
-}
-
-/* Show the dropdown menu when the class is added */
-.dropdown .show {
     display: block;
+    transition: background 0.3s;
 }
-/* Initially hide all content */
+
+/* menu hover effect */
+.dropdown .content a:hover {
+    background: #f1f1f1;     /* Light hover background */
+    color: #7a377e;          /* Blue text on hover */
+}
+
+/*  border animation */
+.dropdown .content a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #aa3ea8;     /* Underline effect */
+    transition: width 0.3s;
+}
+
+/* Expand underline on hover */
+.dropdown .content a:hover::after {
+    width: 100%;
+}
+
+/* Mobile-friendly */
+@media screen and (max-width: 600px) {
+    .dropdown .content {
+        min-width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
 .hidden-content {
     display: none;
 }
@@ -188,4 +213,106 @@ h3 {
     font-size: 24px;
     color: #f9f9f9;
 }
+container {                      /* Customization for the images at the home page ui */
+    text-align: center;                   /* Center the content */
+    max-width: 1100px;                    /* Limit the container width */
+    margin: 0 auto;                       /* Center the container */
+}
 
+.image-container {
+    display: flex;                        /* Display images side by side */
+    justify-content: center;              /* Center the images horizontally */
+    gap: 20px;                            /* Space between the images */
+    margin: 20px 0;                       /* Add spacing above and below */
+}
+
+.image-container img {
+    width: 48%;                           /* Each image takes 48% of the width */
+    height: auto;                         /* Maintain aspect ratio */
+    transition: transform 0.3s;           /* Add hover effect */
+}
+
+.image-container img:hover {
+    transform: scale(1.05);               /* Slight zoom on hover */
+}
+
+
+.container {
+    text-align: center;                   /* Center the content */
+    max-width: 1100px;                    /* Limit the container width */
+    margin: 0 auto;                       /* Center the container */
+}
+
+h2 {
+    margin-top: -20px;                    /* Move the h2 higher */
+    font-size: 2.5rem;                    /* Increase font size if needed */
+    color: #fff;                          /* Text color */
+    text-decoration: underline;           /* Underline the text */
+    text-decoration-color: #9d3ca5;       /* Underline color */
+    text-underline-position: under;       /* Position the underline beneath the text */
+    text-shadow: 0 0 5px rgb(174, 79, 171), 0 0 10px rgb(86, 16, 100); /* Glow effect */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth glow transition */
+}
+
+h2:hover {
+    text-shadow: 0 0 10px rgb(120, 49, 135), 0 0 20px rgb(122, 49, 131); /* Stronger glow on hover */
+}
+
+.image-container {
+    display: flex;                        /* Display images side by side */
+    justify-content: center;              /* Center the images horizontally */
+    gap: 20px;                            /* Space between the images */
+    margin: 20px 0;                       /* Add spacing above and below */
+}
+
+.image-container img {
+    width: 48%;                           /* Each image takes 48% of the width */
+    height: auto;                         /* Maintain aspect ratio */
+    transition: transform 0.3s;           /* Add hover effect */
+}
+
+.image-container img:hover {
+    transform: scale(1.05);               /* Slight zoom on hover */
+}
+h3 { margin-top: -20px;                    /* Move the h2 higher */
+    font-size: 2.5rem;                    /* Increase font size if needed */
+    color: #fff;                          /* Text color */
+    text-decoration: underline;           /* Underline the text */
+    text-decoration-color: #9d3ca5;       /* Underline color */
+    text-underline-position: under;       /* Position the underline beneath the text */
+    text-shadow: 0 0 5px rgb(174, 79, 171), 0 0 10px rgb(86, 16, 100); /* Glow effect */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth glow transition */ }
+    h3:hover {
+        text-shadow: 0 0 10px rgb(120, 49, 135), 0 0 20px rgb(122, 49, 131); /* Stronger glow on hover */
+    }
+    .image-container {
+        display: flex;                        /* Display images side by side */
+        justify-content: center;              /* Center the images horizontally */
+        gap: 20px;                            /* Space between the images */
+        margin: 20px 0;                       /* Add spacing above and below */
+    }
+    
+    .image-container img {
+        width: 48%;                           /* Each image takes 48% of the width */
+        height: auto;                         /* Maintain aspect ratio */
+        transition: transform 0.3s;           /* Add hover effect */
+    }
+    
+    .image-container img:hover {
+        transform: scale(1.05);               /* Slight zoom on hover */
+    }
+
+    h4 {
+        font-size: 2rem;                            /* Make the font a bit larger */
+        font-weight: bold;                          /* Make the text bold */
+        color: #f9f9f9;                             /* Set a cool blue color */
+        letter-spacing: 2px;                        /* Add spacing between letters */
+        text-transform: uppercase;                  /* Make the text uppercase */
+        position: relative;                        /* Required for the underline effect */
+        margin-bottom: 15px;                        /* Add space below the header */
+    }
+
+    h4:hover {
+        color: #e3dee3;                             /* Change text color on hover */
+        text-shadow: 0 0 10px rgba(113, 40, 121, 0.7), 0 0 20px rgb(92, 30, 97); /* Glowing effect */
+    }

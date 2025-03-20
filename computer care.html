@@ -10,8 +10,7 @@
 <head>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>      <!-- the webpage for the menu bar  -->
 
-    
-    
+    <head> 
 </head>
 <body>
     <header>
@@ -20,9 +19,9 @@
     <div class="dropdown">
         <button><ion-icon name="menu-outline"></ion-icon></button>
         <div class="content">
-            <a href="#" class="menu-item" data-target="home-content">home</a>
-            <a href="#" class="menu-item" data-target="about-content">about</a>
-            <a href="#" class="menu-item" data-target="tweaks-content">Tweaks</a>
+            <a href="#" class="menu-item" data-target="home-content"><ion-icon name="home-outline"></ion-icon> Home</a>
+            <a href="#" class="menu-item" data-target="about-content"><ion-icon name="help-outline"></ion-icon> About</a>
+            <a href="#" class="menu-item" data-target="tweaks-content"><ion-icon name="hardware-chip-outline"></ion-icon> Tweaks</a>
         </div>
     </div>
 
@@ -35,15 +34,20 @@
             <h2>Boost FPS and Reduce Latency!</h2>
             <p>we are highly devoted to support you with  some of the best computer tweaks out there .</p>
             <p>we are looking to give users from new computer users to more experienced computer users some insights on the most effective tweaks </p>
-            <img src="Gaming-Computers-servicing.jpg" alt="Gaming Computers Servicing" style="width: 72%; height: auto;">
+            <div class="image-container">
+                <img src="web main pic.jpg" alt="web main pic">
+                <img src="2nd back.jpg" alt="2nd back">
+            </div>
+        
             <h2>Our Services</h2>
-            <p style="color: rgb(255, 255, 255); font-size: 20px;";> We teach you step by step, all the processes of taking care of your pc.</p>
-            
+            <p style="color: rgb(255, 255, 255); font-size: 20px;">We teach you step by step, all the processes of taking care of your PC.</p>
+        </div>
         </div>
     </div>
     
     <div id="about-content" class="hidden-content">
         <!-- about section   -->
+         
         <div class="abt">
             <h2>what are you getting out of this ?  </h2>
             <p>Get the best perfect tweaks for your computer whether your looking to get better performance for gaming or overall performance outside of playing games </p>
@@ -56,7 +60,7 @@
                         <div class="col-md-4">
                             <div class="drastic-improvements text-center">
                                 <i class="fa fa-book"></i>
-                                <h3>Drastic Improvements</h3>
+                                <h4>Drastic Improvements</h4>
                                 <hr>
                                 <p>With the latest tweaks, improvements will be noticed instantly.</p>
                             </div>
@@ -66,7 +70,7 @@
                         <div class="col-md-4">
                             <div class="drastic-improvements text-center">
                                 <i class="fa fa-cogs"></i> <!-- Changed icon for variation -->
-                                <h3>Full Potential</h3>
+                                <h4>Full Potential</h4>
                                 <hr>
                                 <p>These tweaks will help unlock your computer's full potential.</p>
                             </div>
@@ -80,8 +84,9 @@
     <div id="tweaks-content" class="hidden-content">
         <!-- tweaks ....  --> 
         <div class="twk">
-        <h3>Tweaks Content</h3>
-        <p>This is some hidden text for the tweaks section.</p>
+        <h3>Tweaks</h3>
+        <p>Enabling Game Mode </p>
+
         </div>
     </div>
     

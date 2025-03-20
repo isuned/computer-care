@@ -30,3 +30,16 @@ document.querySelectorAll('.menu-item').forEach(item => {
         }
     });
 });
+
+// Close the dropdown when mouse leaves the dropdown area
+document.querySelector(".dropdown").addEventListener("mouseleave", () => {
+    dropdownContent.classList.remove("show");
+});
+
+//  when user clicks  outside
+window.addEventListener("click", (event) => {
+    if (!menuButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+        dropdownContent.classList.remove("show");
+    }
+});
+
