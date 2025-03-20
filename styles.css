@@ -302,7 +302,7 @@ h3 { margin-top: -20px;                    /* Move the h2 higher */
         transform: scale(1.05);               /* Slight zoom on hover */
     }
 
-    h4 {
+    h4 {                                        /* for the tweaks header */
         font-size: 2rem;                            /* Make the font a bit larger */
         font-weight: bold;                          /* Make the text bold */
         color: #f9f9f9;                             /* Set a cool blue color */
@@ -316,3 +316,20 @@ h3 { margin-top: -20px;                    /* Move the h2 higher */
         color: #e3dee3;                             /* Change text color on hover */
         text-shadow: 0 0 10px rgba(113, 40, 121, 0.7), 0 0 20px rgb(92, 30, 97); /* Glowing effect */
     }
+
+    .drastic-improvements p {
+        font-size: 1.4rem;                          /* Slightly larger font size for readability */
+        line-height: 1.8;                           /* Increased line height for better text spacing */
+        color: #f1f1f1;                             /* Soft light color for the text */
+        font-family: 'Arial', sans-serif;           /* Clean and professional font family */
+        font-weight: 400;                           /* Normal weight for the text */
+        margin-top: 15px;                           /* Add space above the text */
+        margin-bottom: 20px;                        /* Add space below the text */
+        text-align: center;                         /* Center align text for consistency */
+        max-width: 90%;                             /* Restrict the width of the text to avoid it stretching too wide */
+        margin-left: auto;                          /* Center the text horizontally */
+        margin-right: auto;                         /* Center the text horizontally */
+        padding: 0 15px;                            /* Add some padding to prevent text from touching the edges */
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow to make the text stand out */
+    }
+    
