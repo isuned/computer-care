@@ -60,7 +60,7 @@
                         <div class="col-md-4">
                             <div class="drastic-improvements text-center">
                                 <i class="fa fa-book"></i>
-                                <h4>Drastic Improvements</h4>
+                                <h4><ion-icon name="build-outline"></ion-icon> Drastic Improvements</h4>
                                <hr>
                                 <p>With the latest tweaks, improvements will be noticed instantly.</p>
                             </div> 
@@ -70,7 +70,7 @@
                         <div class="col-md-4">
                             <div class="drastic-improvements text-center">
                                 <i class="fa fa-cogs"></i> <!-- Changed icon for variation -->
-                                <h4>Full Potential</h4>
+                                <h4><ion-icon name="speedometer-outline"></ion-icon> Full Potential</h4>
                                 <hr>
                                 <p>These tweaks will help unlock your computer's full potential.</p>
                             </div>
@@ -85,11 +85,32 @@
         <!-- tweaks ....  --> 
         <div class="twk">
         <h3>Tweaks</h3>
-        <p>Enabling Game Mode </p>
-
+        <!-- Buttons -->
+        <div class="twk-buttons">
+            <button onclick="showTwkContent('gamer')" class="twk-btn">For Gamers</button>
+            <button onclick="showTwkContent('slow-pc')" class="twk-btn">For Slow Computers</button>
         </div>
-    </div>
-    
+
+        <!-- Content Sections (Hidden by Default) -->
+        <div id="gamer-content" class="twk-content hidden">
+            <h4>Gamer Tweaks</h4>
+            
+            <h5>Enable Game Mode</h5>
+            <p>Game Mode is a Windows 10/11 feature that prioritizes system resources for gaming, you can enable it by hovering over to settings and going  into the game menu.</p>
+            
+            <div class="image-container">
+                <img src="1st tweak.jpg" alt="1st tweak">
+            </div>
+        </div>
+        
+        <div id="slow-pc-content" class="twk-content hidden">
+            <h4>Slow Computer Tweaks</h4>
+            
+            <h5>Optimize Performance</h5>
+            <p>Boost your slow laptop's speed by disabling unnecessary services, optimizing startup programs, and adjusting visual effects.</p>
+            
+           
+        </div>
     
    
     <footer>

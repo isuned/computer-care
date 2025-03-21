@@ -13,12 +13,12 @@ window.addEventListener("click", function (event) {
         dropdownContent.classList.remove("show");
     }
 });
-// JavaScript to toggle visibility of hidden content just added 
+// toggling  visibility of hidden content section
 document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener('click', function(e) {
         e.preventDefault(); // Prevent default link behavior
 
-        // Hide all content sections
+        // Hide the  content sections
         document.querySelectorAll('.hidden-content').forEach(content => {
             content.style.display = 'none';
         });
@@ -36,10 +36,31 @@ document.querySelector(".dropdown").addEventListener("mouseleave", () => {
     dropdownContent.classList.remove("show");
 });
 
-//  when user clicks  outside
+//  when user clicks  outside of the menu zone 
 window.addEventListener("click", (event) => {
     if (!menuButton.contains(event.target) && !dropdownContent.contains(event.target)) {
         dropdownContent.classList.remove("show");
     }
 });
 
+function showTwkContent(type) {
+    const gamerContent = document.getElementById('gamer-content');
+    const slowPCContent = document.getElementById('slow-pc-content');
+
+    // Create a map to easily handle content visibility
+    const contentMap = {
+        'gamer': gamerContent,
+        'slow-pc': slowPCContent
+    };
+
+    // Loop through the map and show only the selected content
+    for (const key in contentMap) {
+        if (key === type) {
+            contentMap[key].classList.remove('hidden');
+            contentMap[key].classList.add('show');
+        } else {
+            contentMap[key].classList.add('hidden');
+            contentMap[key].classList.remove('show');
+        }
+    }
+}
