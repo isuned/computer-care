@@ -64,3 +64,39 @@ function showTwkContent(type) {
         }
     }
 }
+
+
+
+
+
+document.getElementById('pc-specs-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const cpu = document.getElementById('cpu').value.toLowerCase();
+    const ram = parseInt(document.getElementById('ram').value);
+    const gpu = document.getElementById('gpu').value.toLowerCase();
+
+    let performance = "Unknown";
+    let advice = "";
+
+    // Basic Performance Assessment
+    if ((cpu.includes("i5") || cpu.includes("ryzen 5") || cpu.includes("i7")) && ram >= 16 && gpu.includes("gtx") || gpu.includes("rtx")) {
+        performance = "Excellent";
+        advice = "Your PC is well-equipped for gaming and demanding tasks.";
+    } else if ((cpu.includes("i3") || cpu.includes("ryzen 3")) && ram >= 8 && (gpu.includes("gtx") || gpu.includes("rx"))) {
+        performance = "Moderate";
+        advice = "Your PC can handle most tasks and moderate gaming, but might struggle with heavier games.";
+    } else {
+        performance = "Low";
+        advice = "Consider upgrading your hardware for better performance, especially RAM and GPU.";
+    }
+
+    // Display Result
+    const resultText = `
+        <strong>Performance:</strong> ${performance} <br>
+        <strong>Advice:</strong> ${advice}
+    `;
+    document.getElementById('result-text').innerHTML = resultText;
+    document.getElementById('performance-result').classList.remove('hidden');
+});
+

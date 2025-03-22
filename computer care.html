@@ -7,12 +7,8 @@
     <title>computer care</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<head>
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>      <!-- the webpage for the menu bar  -->
-
-    <head> 
-</head>
 <body>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>      <!-- the webpage for the menu bar  --> 
     <header>
         <h1> Computer World </h1>
     </header>        <!-- The drop down  section  -->
@@ -22,8 +18,11 @@
             <a href="#" class="menu-item" data-target="home-content"><ion-icon name="home-outline"></ion-icon> Home</a>
             <a href="#" class="menu-item" data-target="about-content"><ion-icon name="help-outline"></ion-icon> About</a>
             <a href="#" class="menu-item" data-target="tweaks-content"><ion-icon name="hardware-chip-outline"></ion-icon> Tweaks</a>
+            <a href="#" class="menu-item" data-target="test-content"><ion-icon name="rocket-outline"></ion-icon> Test</a>  <!-- New Test section -->
         </div>
     </div>
+
+    
 
     <!-- Hidden content sections -->
     <div id="home-content" class="hidden-content">
@@ -42,7 +41,7 @@
             <h2>Our Services</h2>
             <p style="color: rgb(255, 255, 255); font-size: 21px;">We teach you step by step, all the processes of taking care of your PC.</p>
         </div>
-        </div>
+        
     </div>
     
     <div id="about-content" class="hidden-content">
@@ -60,9 +59,9 @@
                         <div class="col-md-4">
                             <div class="drastic-improvements text-center">
                                 <i class="fa fa-book"></i>
-                                <h4><ion-icon name="build-outline"></ion-icon> Drastic Improvements</h4>
+                                <h4><ion-icon name="build-outline"></ion-icon>  Improvements</h4>
                                <hr>
-                                <p>With the latest tweaks, improvements will be noticed instantly.</p>
+                                <p> improvements will be noticed instantly.</p>
                             </div> 
                         </div>
         
@@ -74,13 +73,16 @@
                                 <hr>
                                 <p>These tweaks will help unlock your computer's full potential.</p>
                             </div>
+                            
                         </div>
+                        
                     </div>
+
                 </div>
             </div>
         </div>
         
-        </div>  
+    </div>  
     <div id="tweaks-content" class="hidden-content">
         <!-- tweaks ....  --> 
         <div class="twk">
@@ -106,16 +108,54 @@
         <div id="slow-pc-content" class="twk-content hidden">
             <h4>Slow Computer Tweaks</h4>
             
-            <h5>Optimize Performance</h5>
-            <p>Boost your slow laptop's speed by disabling unnecessary services, optimizing startup programs, and adjusting visual effects.</p>
-            
-           
+            <h5>storage sense</h5>
+            <p>Enabling storage sense will be a very good first step as it helps clean up temporary files </p>
+            <p>Your pc migtht be running slow due to excess files on ur storage drive or lots of temp files </p>
+            <p>you can enable it by going to settings and then to system and then to storage</p>
+            <div class="image-container">
+                <img src="storage sense.webp" alt="storage sense">
+            </div>
+        </div>
+    </div>
+
+    
+       
+        
+    </div>
+</div>
+ <!-- New Test Section -->
+ <div id="test-content" class="hidden-content">
+    <div class="test">
+        <div class="pc-specs-form">
+            <h3>Check Your PC's Performance</h3>
+            <form id="pc-specs-form">
+                <label for="cpu">Processor:</label>
+                <input type="text" id="cpu" name="cpu" placeholder="e.g., Intel i5-10400F" required>
+        
+                <label for="ram">RAM (GB):</label>
+                <input type="number" id="ram" name="ram" placeholder="e.g., 16" required>
+        
+                <label for="gpu">Graphics Card:</label>
+                <input type="text" id="gpu" name="gpu" placeholder="e.g., NVIDIA GTX 1660" required>
+        
+                <button type="submit">Check Performance</button>
+            </form>
+        
+            <div id="performance-result" class="hidden">
+                <h4>Performance Analysis</h4>
+                <p id="result-text"></p>
+            </div>
         </div>
     
-   
+        </div>
+    </div>
+
+
+
     <footer>
-        <p>&copy; 2025 computer care. All rights reserved.</p>
+        <p>&copy; 2025 Computer World. All rights reserved.</p>
     </footer>
+
     <script src="interactions.js"></script>   <!-- the javascript file   -->
 
 </body>

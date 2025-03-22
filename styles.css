@@ -200,12 +200,17 @@ footer:hover {
     backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 10px;
-    width : 400px;
+    width: 400px; 
     text-align: center;
     transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
+.container_about .row {
+    display: flex;
+    justify-content: center; /* Center the sections horizontally */
+    gap: 20px; /* Add spacing between sections */
+    flex-wrap: wrap; /* Ensure they wrap on smaller screens */
+}
 .drastic-improvements:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -428,4 +433,48 @@ h3 { margin-top: -20px;                    /* Move the h2 higher */
         transform: translateY(0);
     }
 }
+.pc-specs-form {
+    background: #7c1e81;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.pc-specs-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pc-specs-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pc-specs-form button {
+    background: #0a170b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pc-specs-form button:hover {
+    background: #45a049;
+}
+
+#performance-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #070f17;
+    color: #333;
+}
+
     
