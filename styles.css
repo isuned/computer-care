@@ -48,7 +48,7 @@ nav a:hover {
 }
 
 h2{
-    color: #fff;
+    color: #fff;      /*header 2 effects*/
 }
 
 p {
@@ -60,13 +60,13 @@ footer {
     background: #121111;
     color: #fff;
     padding: 1rem 0;
-    position: relative;
+    position: relative;        /*footer customization*/
     bottom: 0;
     width: 100%;
     transition: background 0.3s, color 0.3s;
 }
 footer:hover {
-    background: #834278;
+    background: #834278;   /*footer hovering effect*/
     color: #fff;
 }
 /* Dropdown container */
@@ -77,7 +77,7 @@ footer:hover {
 
 /* Dropdown button */
 .dropdown button {
-    background: #061006; /* Stylish green */
+    background: #061006; /*  */
     color: white;
     border: none;
     padding: 10px 18px;
@@ -87,13 +87,13 @@ footer:hover {
     transition: background 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effect */
+/* Hover effect for dropdown */
 .dropdown button:hover {
     background: #9e5c8f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Dropdown content */
+/* Dropdown content customization */
 .dropdown .content {
     display: none;
     position: absolute;
@@ -145,7 +145,7 @@ footer:hover {
     width: 100%;
 }
 
-/* Mobile-friendly */
+/* mobile customizations  */
 @media screen and (max-width: 600px) {
     .dropdown .content {
         min-width: 100%;
@@ -465,11 +465,11 @@ h3 { margin-top: -20px;                    /* Move the h2 higher */
     cursor: pointer;
 }
 
-.pc-specs-form button:hover {
-    background: #45a049;
+.pc-specs-form button:hover {     /* Button when user hovers over test specs  */
+    background: #505450;
 }
 
-#performance-result {
+#performance-result {    /* performance results design  */
     margin-top: 20px;
     padding: 15px;
     border-radius: 8px;

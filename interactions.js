@@ -31,7 +31,7 @@ document.querySelectorAll('.menu-item').forEach(item => {
     });
 });
 
-// Close the dropdown when mouse leaves the dropdown area
+// function to close dropdown when user leaves the area 
 document.querySelector(".dropdown").addEventListener("mouseleave", () => {
     dropdownContent.classList.remove("show");
 });
@@ -79,7 +79,7 @@ document.getElementById('pc-specs-form').addEventListener('submit', function(e) 
     let performance = "Unknown";
     let advice = "";
 
-    // Basic Performance Assessment
+    // performance check function to run basic check 
     if ((cpu.includes("i5") || cpu.includes("ryzen 5") || cpu.includes("i7")) && ram >= 16 && gpu.includes("gtx") || gpu.includes("rtx")) {
         performance = "Excellent";
         advice = "Your PC is well-equipped for gaming and demanding tasks.";
