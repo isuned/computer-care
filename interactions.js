@@ -2,7 +2,7 @@
 const menuButton = document.querySelector(".dropdown button");
 const dropdownContent = document.querySelector(".dropdown .content");
 
-// Toggle dropdown menu when clicking the button
+// Toggle dropdownwhen the button is clicked 
 menuButton.addEventListener("click", function () {
     dropdownContent.classList.toggle("show");
 });
@@ -13,7 +13,7 @@ window.addEventListener("click", function (event) {
         dropdownContent.classList.remove("show");
     }
 });
-// toggling  visibility of hidden content section
+//  visibility toggling for the hidden section 
 document.querySelectorAll('.menu-item').forEach(item => {
     item.addEventListener('click', function(e) {
         e.preventDefault(); // Prevent default link behavior
@@ -47,7 +47,7 @@ function showTwkContent(type) {
     const gamerContent = document.getElementById('gamer-content');
     const slowPCContent = document.getElementById('slow-pc-content');
 
-    // Create a map to easily handle content visibility
+    // map to show only the content thats been selected in the tweak section
     const contentMap = {
         'gamer': gamerContent,
         'slow-pc': slowPCContent
@@ -64,9 +64,6 @@ function showTwkContent(type) {
         }
     }
 }
-
-
-
 
 
 document.getElementById('pc-specs-form').addEventListener('submit', function(e) {
