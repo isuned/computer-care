@@ -26,6 +26,7 @@ header:hover {         /*hover effect on header*/
     box-shadow: 0 0 25px rgb(190, 80, 205), 0 0 50px rgb(133, 51, 148); 
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
 nav {
 
     background: #424141;
@@ -117,7 +118,7 @@ footer:hover {
 
 /* Menu items */
 .dropdown .content a {
-    color: #333;             /* Dark text color */
+    color: #191818;             /* Dark text color */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -476,5 +477,7 @@ h3 { margin-top: -20px;                    /* Move the h2 higher */
     background: #070f17;
     color: #333;
 }
+
+
 
     
